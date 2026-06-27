@@ -1,0 +1,45 @@
+{
+  "script": "run_section8_policy_geometry_vF.py",
+  "seeds": 30,
+  "quick": false,
+  "device": "cuda",
+  "cuda_available": true,
+  "grid_2d": 240,
+  "actions": 4,
+  "sample_values": [
+    100,
+    200,
+    500,
+    1000,
+    2000,
+    5000,
+    10000,
+    25000,
+    50000,
+    100000
+  ],
+  "eps_grid": [
+    0.2,
+    0.1,
+    0.05,
+    0.025,
+    0.01,
+    0.005
+  ],
+  "z_bins": 240,
+  "eval_size": 100000,
+  "structured_families": [
+    "inventory_threshold",
+    "machine_replacement",
+    "admission_control",
+    "resource_allocation",
+    "random_structured"
+  ],
+  "unstructured_families": [
+    "oscillatory_fragmented"
+  ],
+  "black_box_protocol": "learner observes only (x,z,pi*(x,z)); no Q*, no gaps, no thresholds",
+  "critical_fix": "separates oracle_seed from query_seed so the target policy is fixed across strategies",
+  "active_protocol": "adaptive monotone bracketing and bisection using action labels only",
+  "timestamp": "2026-06-24 01:13:30"
+}
