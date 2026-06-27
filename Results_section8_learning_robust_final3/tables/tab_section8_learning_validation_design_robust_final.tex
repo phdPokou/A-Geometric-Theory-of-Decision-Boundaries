@@ -1,0 +1,15 @@
+\begin{tabular}{p{0.24\linewidth}p{0.30\linewidth}p{0.38\linewidth}}
+\toprule
+Component & Value & Role \\
+\midrule
+Seeds & 30 & Independent Monte Carlo replications. \\
+State domain & $[-1,1]^2$ & Two-dimensional ordered state representation. \\
+Grid resolution & 401 x 401 & Evaluation grid for policies and disagreement sets. \\
+Oracle actions & 4 & Default number of discrete policy regions. \\
+Decision boundaries & 3 & Ordered graphs defining $\Gamma^\star$. \\
+Budgets & 100, 200, 500, 1000, 2000, 5000, 10000, 25000, 50000, 100000 & Nominal black-box query budgets. \\
+Boundary learner & active adaptive bisection & Queries concentrate around sign changes of adjacent actions. \\
+Baseline & uniform sampling & Black-box policy queries drawn uniformly over the state domain. \\
+Failure families & structured, piecewise_linear, random_monotone, oscillatory, checkerboard, random_labels & Regularity-removal stress tests. \\
+\bottomrule
+\end{tabular}

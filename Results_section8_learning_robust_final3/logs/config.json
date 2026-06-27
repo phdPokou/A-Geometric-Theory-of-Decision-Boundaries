@@ -1,0 +1,87 @@
+{
+  "seeds": 30,
+  "device": "cuda",
+  "quick": false,
+  "output_dir": "Results_section8_learning_robust_final3",
+  "grid_size": 401,
+  "x_min": -1.0,
+  "x_max": 1.0,
+  "z_min": -1.0,
+  "z_max": 1.0,
+  "n_actions_default": 4,
+  "boundary_curvature": 0.085,
+  "boundary_slope": 0.58,
+  "boundary_offsets": [
+    -0.56,
+    0.0,
+    0.56
+  ],
+  "budgets": [
+    100,
+    200,
+    500,
+    1000,
+    2000,
+    5000,
+    10000,
+    25000,
+    50000,
+    100000
+  ],
+  "boundary_budgets": [
+    100,
+    200,
+    500,
+    1000,
+    2000,
+    5000,
+    10000,
+    25000,
+    50000,
+    100000
+  ],
+  "epsilons": [
+    0.2,
+    0.1,
+    0.05,
+    0.02,
+    0.01,
+    0.005
+  ],
+  "confidence_levels": [
+    0.8,
+    0.9,
+    0.95
+  ],
+  "action_counts": [
+    2,
+    3,
+    4,
+    6,
+    8,
+    12,
+    16
+  ],
+  "failure_families": [
+    "structured",
+    "piecewise_linear",
+    "random_monotone",
+    "oscillatory",
+    "checkerboard",
+    "random_labels"
+  ],
+  "smooth_noise_amplitudes": [
+    0.0,
+    0.002,
+    0.005,
+    0.01,
+    0.02,
+    0.035,
+    0.05,
+    0.075,
+    0.1
+  ],
+  "dpi": 300,
+  "fig_w": 7.2,
+  "fig_h": 5.0
+}
