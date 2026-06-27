@@ -1,0 +1,46 @@
+{
+  "script": "run_section8_policy_geometry_vF2.py",
+  "seeds": 30,
+  "quick": false,
+  "device": "cuda",
+  "cuda_available": true,
+  "grid_sizes": [
+    40,
+    60,
+    80,
+    120,
+    160,
+    240,
+    320
+  ],
+  "dimension_values": [
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16
+  ],
+  "action_values": [
+    2,
+    3,
+    4,
+    5,
+    8,
+    10
+  ],
+  "structured_families": [
+    "inventory_threshold",
+    "machine_replacement",
+    "admission_control",
+    "resource_allocation",
+    "random_structured"
+  ],
+  "unstructured_families": [
+    "oscillatory_fragmented"
+  ],
+  "purpose": "compression scaling, geometric complexity, MDL information-theoretic compression",
+  "timestamp": "2026-06-24 19:50:40"
+}
